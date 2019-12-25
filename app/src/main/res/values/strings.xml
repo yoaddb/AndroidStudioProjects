@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shift Management App</string>
+    <string name="id">ID</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search&#8230;</string>
+    <string name="startTime">Start Time</string>
+    <string name="endTime">End Time</string>
+    <string name="wage">Wage</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="salaryDesc">Expected salary at end of month :</string>
+    <string name="set_date">Set Date</string>
+    <string name="select_a_date">Select a date&#8230;</string>
+    <string name="date">Date</string>
+    <string name="user">User</string>
+    <string name="view">View</string>
+    <string name="manageUsers">Manage Users</string>
+    <string name="viewSalary">View Salaries &amp; Shifts</string>
+
+</resources>

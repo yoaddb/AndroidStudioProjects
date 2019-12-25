@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mShiftActivity"
+    android:background="@color/colorPrimary">
+
+    <include
+        android:id="@+id/btnHome"
+        layout="@layout/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"/>
+
+    <include
+        android:id="@+id/shiftTitle"
+        layout="@layout/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHome"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shiftTitle"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="@string/startTime"
+                android:textSize="20sp"
+                android:labelFor="@id/startTime"
+                android:textColor="@color/black"/>
+            <com.FinalProject.TimeEditText
+                android:id="@+id/startTime"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="@string/endTime"
+                android:textSize="20sp"
+                android:labelFor="@id/endTime"
+                android:textColor="@color/black"/>
+            <com.FinalProject.TimeEditText
+                android:id="@+id/endTime"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="30dp">-->
+<!--            <TextView-->
+<!--                android:id="@+id/textView44"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".5"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/wage"-->
+<!--                android:textSize="20sp"-->
+<!--                android:labelFor="@id/wage"-->
+<!--                android:textColor="@color/black"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/wage"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".5"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_info"
+        android:layout_marginTop="120dp">
+
+        <Button
+            android:id="@+id/btnSaveShift"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"
+            android:layout_marginStart="30dp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"/>
+
+        <Button
+            android:id="@+id/btnDeleteShift"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/delete"
+            android:layout_marginEnd="30dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

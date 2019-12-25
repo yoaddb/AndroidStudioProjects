@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:paddingTop="5dp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logout">
+    </ImageView>
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        ></include>
+
+    <ImageView
+        android:id="@+id/config"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/settings">
+
+    </ImageView>
+</LinearLayout>
