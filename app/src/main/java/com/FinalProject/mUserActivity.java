@@ -286,7 +286,7 @@ public class mUserActivity extends AppCompatActivity {
             phone.setError("Phone is required");
             return false;
         } else if (!phone.getText().toString().startsWith("05")
-                    && phone.getText().toString().length() != 10) {
+                    || phone.getText().toString().length() != 10) {
             phone.setError("Phone must be valid (05xxxxxxxx)");
             return false;
         } else if (Float.parseFloat(wage.getText().toString())<=24) {
